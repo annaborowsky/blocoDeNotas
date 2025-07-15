@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //adicionando um evento de clique ao botao "limpar notas"//
     btnLimparNotas.addEventListener('click', () => {
         //quando o botao é clicado, limpamos o conteúdo do bloco de notas.//
-        blocoDeNotas.value = ''; //define o valor do <textarea/> como uma string //
+        blocoDeNotas.value = ''; //define o valor do <textarea/> como uma string vazia //
         //tambem removemos a nota salva do localstorage// 
         localStorage.removeItem('minhaNota');//remove o item 'minhanota', caso se fosse um vetor, nao seria bom pq apagaria todos os dados, porem, como é apenas aquela nota nao tem problema usar o remove.item//
         console.log("Notas Limpas"); //mensagem no console para confirmar que limpou// 
