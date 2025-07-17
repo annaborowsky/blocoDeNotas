@@ -24,6 +24,15 @@ body {
     max-width: 600px;
 
 }
+#SalvarNotas {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Espaço entre os botões */
+}
 
 #LimparNotas {
     background-color: #000000;
@@ -69,6 +78,7 @@ p {
 }
 
 h1 span.letra {
+   
     display: inline-block;
     width: 1em;
     /* Largura ajustada ao tamanho da letra */
@@ -79,6 +89,9 @@ h1 span.letra {
     vertical-align: baseline;
     /* Alinha com o texto ao redor */
     text-align: center;
+    margin-left: -10px;
+    margin-right: -7px;
+    
 }
 
 /* Estilo para substituir a letra com imagem */
@@ -91,4 +104,5 @@ h1:hover span.letra {
     /* Ajusta a imagem proporcionalmente */
     background-repeat: no-repeat;
     background-position: center;
+
 }
