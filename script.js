@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnSalvar = document.getElementById('SalvarNotas');
     // Aqui, estamos pegando o botão que usamos para salvar as notas.
     const btnLimparNotas = document.getElementById('LimparNotas');
-    const theme = "";
+    let theme = "";
     // Aqui, estamos pegando o botão que usamos para limpar as notas.
      btnSalvar.addEventListener('click', () => {
         //quando o botao é clicado, salvamos o conteúdo do bloco de notas.//

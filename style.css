@@ -54,7 +54,7 @@ body {
     cursor: pointer;
 }
 
-.novo-estilo {
+.novo-estilo .container {
     background-image: url(https://inovaveterinaria.com.br/wp-content/uploads/2015/04/gato-sem-raca-INOVA-1024x683.jpg);
     background-repeat: no-repeat;
 
