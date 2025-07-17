@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnSalvar = document.getElementById('SalvarNotas');
     // Aqui, estamos pegando o botão que usamos para salvar as notas.
     const btnLimparNotas = document.getElementById('LimparNotas');
-
+    const theme = "";
+    // Aqui, estamos pegando o botão que usamos para limpar as notas.
      btnSalvar.addEventListener('click', () => {
         //quando o botao é clicado, salvamos o conteúdo do bloco de notas.//
-        //tambem salvamos a nota salva do localstorage// 
+        //tambem  a nota salva do localstorage// 
         localStorage.setItem('minhaNota', blocoDeNotas.value);
         console.log("Nota Salva"); //mensagem no console para confirmar que limpou// 
     });
@@ -75,5 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Nota salva no localStorage!"); // Uma mensagem no console para fins de depuração.
 
     });
-
+    const btnAlterarEstilo = document.getElementById('AlterarEstilo');
+    AlterarEstilo.addEventListener('click',function () {
+        // Função para alterar o estilo do bloco de notas
+        if(theme === 'novo-estilo') { 
+            theme= '';
+            document.body.classList.remove('novo-estilo'); // Adiciona a classe 'novo-estilo' ao body
+            console.log("Estilo removido!"); // Mensagem no console para confirmar a alteração de estilo
+        } else {
+             document.body.classList.add('novo-estilo');
+             theme= 'novo-estilo'; // Remove a classe 'novo-estilo' do body
+             console.log("Estilo adicionado!"); // Mensagem no console para confirmar a alteração de estilo
+        }}); 
+       // Adicionando um evento de clique ao botão "Alterar Estilo"      
+    
 });
